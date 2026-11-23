@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="wrap">
             <p>© {new Date().getFullYear()} {site.name}</p>
             <p>
-              <Link href="/about">About</Link> · <Link href="/privacy">Privacy Policy</Link>
+              <Link href="/about">About</Link> · <Link href="/privacy">Privacy Policy</Link> · <Link href="/terms-of-service">Terms</Link> · <Link href="/disclaimer">Disclaimer</Link> · <Link href="/contact">Contact</Link>
             </p>
           </div>
         </footer>
