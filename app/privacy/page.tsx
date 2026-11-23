@@ -19,7 +19,7 @@ export default function Privacy() {
       <h2>Analytics</h2>
       <p>We use Google Analytics to understand how visitors use the site. This data is aggregated and anonymous.</p>
       <h2>Contact</h2>
-      <p>For any privacy question, contact: contact@yourdomain.com</p>
+      <p>For any privacy question, contact: contact@easyhomerecipe.com</p>
     </div>
   );
 }

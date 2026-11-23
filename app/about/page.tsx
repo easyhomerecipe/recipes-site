@@ -14,7 +14,7 @@ export default function About() {
       <p>
         Behind the blog is {site.author}, a home cook who loves Moroccan flavors and quick everyday meals.
       </p>
-      <p>Questions or suggestions? Contact us at: contact@yourdomain.com</p>
+      <p>Questions or suggestions? Contact us at: contact@easyhomerecipe.com</p>
     </div>
   );
 }

@@ -4,7 +4,7 @@ export const site = {
   tagline: "Simple, tested recipes for every day",
   description:
     "Easy, tested home recipes with step-by-step instructions, ingredient lists, cooking times and nutrition info.",
-  // Set NEXT_PUBLIC_SITE_URL in Vercel (e.g. https://yourdomain.com)
+  // Set NEXT_PUBLIC_SITE_URL in Vercel (e.g. https://easyhomerecipe.com)
   url: (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, ""),
   author: "Kabir",
   // Google AdSense publisher ID, e.g. "ca-pub-1234567890123456" (leave empty until approved)
