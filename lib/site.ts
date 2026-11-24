@@ -1,3 +1,4 @@
+
 // ===== Edit these values for your blog =====
 export const site = {
   name: "Easy Home Recipes",
@@ -10,7 +11,7 @@ export const site = {
   // Google AdSense publisher ID, e.g. "ca-pub-1234567890123456" (leave empty until approved)
   adsenseClient: process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "",
   // Google Analytics 4 ID, e.g. "G-XXXXXXX"
-  gaId: process.env.NEXT_PUBLIC_GA_ID || "",
+  gaId: process.env.NEXT_PUBLIC_GA_ID || "G-M8K3BM6XMP",
   categories: [
     { slug: "breakfast", name: "Breakfast" },
     { slug: "dinner", name: "Dinner" },
@@ -18,6 +19,11 @@ export const site = {
     { slug: "healthy", name: "Healthy" },
     { slug: "moroccan", name: "Moroccan" },
   ],
+};
+
+export function categoryName(slug: string) {
+  return site.categories.find((c) => c.slug === slug)?.name ?? slug;
+}
 };
 
 export function categoryName(slug: string) {
