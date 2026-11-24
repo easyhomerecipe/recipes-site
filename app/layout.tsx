@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   description: site.description,
   openGraph: { siteName: site.name, type: "website" },
   alternates: { canonical: "/" },
+  other: {
+    "p:domain_verify": "34523a2f7ecfed15342b042cab4fb9f5",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
