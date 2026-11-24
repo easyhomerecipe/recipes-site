@@ -24,8 +24,4 @@ export const site = {
 export function categoryName(slug: string) {
   return site.categories.find((c) => c.slug === slug)?.name ?? slug;
 }
-};
 
-export function categoryName(slug: string) {
-  return site.categories.find((c) => c.slug === slug)?.name ?? slug;
-}
