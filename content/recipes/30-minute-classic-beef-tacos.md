@@ -1,10 +1,10 @@
 ---
 title: "30-Minute Classic Beef Tacos"
-description: "Quick and easy beef tacos ready in just 30 minutes. Perfect for weeknight dinners!"
+description: "Juicy seasoned beef tacos ready in 30 minutes, topped with fresh pico de gallo, avocado and lime. An easy weeknight dinner the whole family will love."
 date: "2026-11-26"
 image: "/images/30-minute-classic-beef-tacos.jpg"
-imageAlt: "Finished beef tacos topped with lettuce and salsa"
-category: "desserts"
+imageAlt: "Three beef tacos with diced tomatoes, red onion, cilantro and avocado slices on a white plate"
+category: "Dinner"
 cuisine: "Mexican"
 tags: ["beef", "tacos", "quick dinner", "mexican food"]
 prepTime: 10
