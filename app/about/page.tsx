@@ -8,7 +8,7 @@ export default function About() {
     <div className="prose">
       <h1>About {site.name}</h1>
       <p>
-        {site.name} shares simple, tested recipes that anyone can cook at home. Every recipe includes clear
+        {site.name} shares simple, easy recipes that anyone can cook at home. Every recipe includes clear
         ingredient lists, step-by-step instructions, cooking times and practical tips.
       </p>
       <p>

@@ -27,16 +27,22 @@ export type Recipe = {
   html: string; // intro article (markdown body)
 };
 
+function safeIso(v: unknown, fallback?: string): string | undefined {
+  const d = v ? new Date(v as string) : null;
+  return d && !isNaN(d.getTime()) ? d.toISOString() : fallback;
+}
+
 function read(file: string): Recipe {
   const slug = file.replace(/\.md$/, "");
   const raw = fs.readFileSync(path.join(DIR, file), "utf8");
   const { data, content } = matter(raw);
+  if (!safeIso(data.date)) console.warn(`[recipes] ${file}: missing or invalid "date" — using 2026-01-01`);
   return {
     slug,
     title: data.title,
     description: data.description,
-    date: new Date(data.date).toISOString(),
-    updated: data.updated ? new Date(data.updated).toISOString() : undefined,
+    date: safeIso(data.date, "2026-01-01T00:00:00.000Z")!,
+    updated: safeIso(data.updated),
     image: data.image,
     imageAlt: data.imageAlt,
     category: data.category,
@@ -59,7 +65,16 @@ export function getAllRecipes(): Recipe[] {
   return fs
     .readdirSync(DIR)
     .filter((f) => f.endsWith(".md"))
-    .map(read)
+    .flatMap((f) => {
+      try {
+        const r = read(f);
+        if (!r.title) throw new Error("missing title");
+        return [r];
+      } catch (e) {
+        console.warn(`[recipes] skipped ${f}: ${(e as Error).message}`);
+        return [];
+      }
+    })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 

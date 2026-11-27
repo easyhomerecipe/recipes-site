@@ -42,7 +42,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               {site.categories.map((c) => (
                 <Link key={c.slug} href={`/category/${c.slug}`}>{c.name}</Link>
               ))}
-              <Link href="/search">Search</Link>
+              <Link href="/search" className="nav-search-link">Search</Link>
+              <form action="/search" className="nav-search">
+                <input name="q" placeholder="Search recipes" aria-label="Search recipes" />
+              </form>
             </nav>
           </div>
         </header>

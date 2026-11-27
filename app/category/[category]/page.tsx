@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!c) return {};
   return {
     title: `${c.name} Recipes`,
-    description: `Easy, tested ${c.name.toLowerCase()} recipes with step-by-step instructions.`,
+    description: `Easy ${c.name.toLowerCase()} recipes with step-by-step instructions.`,
     alternates: { canonical: `/category/${c.slug}` },
   };
 }
@@ -30,7 +30,7 @@ export default async function CategoryPage({ params }: Props) {
   return (
     <>
       <h1>{c.name} Recipes</h1>
-      <p className="lead">Easy, tested {c.name.toLowerCase()} recipes with step-by-step instructions.</p>
+      <p className="lead">Easy {c.name.toLowerCase()} recipes with step-by-step instructions.</p>
       <AdSlot />
       {recipes.length ? (
         <div className="grid">{recipes.map((r) => <RecipeCard key={r.slug} r={r} />)}</div>

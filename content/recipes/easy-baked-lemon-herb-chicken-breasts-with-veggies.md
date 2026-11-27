@@ -1,6 +1,7 @@
 ---
 title: "Skillet Lemon Garlic Chicken and Asparagus (20 Minutes)"
 description: "Pan-seared chicken and crisp asparagus cooked in one skillet with a bright lemon garlic butter sauce. A fast stovetop dinner ready in about 20 minutes."
+date: "2026-11-25"
 image: "/images/easy-baked-lemon-herb-chicken-breasts-with-veggies.jpg"
 imageAlt: "Baked lemon herb chicken breasts served with fresh vegetables"
 category: "healthy"

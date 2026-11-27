@@ -2,9 +2,9 @@
 // ===== Edit these values for your blog =====
 export const site = {
   name: "Easy Home Recipes",
-  tagline: "Simple, tested recipes for every day",
+  tagline: "Easy home recipes for every day",
   description:
-    "Easy, tested home recipes with step-by-step instructions, ingredient lists, cooking times and nutrition info.",
+    "Easy home recipes with step-by-step instructions, ingredient lists, cooking times and nutrition info.",
   // Set NEXT_PUBLIC_SITE_URL in Vercel (e.g. https://easyhomerecipe.com)
   url: (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, ""),
   author: "Kabir",
@@ -18,6 +18,7 @@ export const site = {
     { slug: "desserts", name: "Desserts" },
     { slug: "healthy", name: "Healthy" },
     { slug: "moroccan", name: "Moroccan" },
+    { slug: "holiday", name: "Holiday" },
   ],
 };
 
