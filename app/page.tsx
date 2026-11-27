@@ -2,6 +2,8 @@ import Link from "next/link";
 import RecipeCard from "@/components/RecipeCard";
 import AdSlot from "@/components/AdSlot";
 import { getAllRecipes, fmt, type Recipe } from "@/lib/recipes";
+import { getAllTips } from "@/lib/tips";
+import TipCard from "@/components/TipCard";
 import { site, categoryName } from "@/lib/site";
 
 const HOLIDAY_TAGS = ["christmas", "holiday", "thanksgiving", "new year", "new year's eve", "festive", "winter"];
@@ -23,6 +25,7 @@ export default function Home() {
   const latest = rest.slice(0, 5);
   const holiday = recipes.filter(isHoliday).slice(0, 6);
   const showHoliday = holidaySeason() && holiday.length > 0;
+  const tips = getAllTips().slice(0, 4);
 
   const websiteLd = {
     "@context": "https://schema.org",
@@ -111,6 +114,16 @@ export default function Home() {
             </section>
           );
         })}
+
+      {tips.length > 0 && (
+        <section className="cat-row">
+          <div className="row-head">
+            <h2 className="section-title">Kitchen Tips</h2>
+            <Link href="/tips" className="see-all">See all →</Link>
+          </div>
+          <div className="grid grid-4">{tips.map((t) => <TipCard key={t.slug} t={t} />)}</div>
+        </section>
+      )}
     </>
   );
 }

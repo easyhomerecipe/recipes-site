@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllRecipes } from "@/lib/recipes";
 import { site } from "@/lib/site";
+import { getAllTips } from "@/lib/tips";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const recipes = getAllRecipes().map((r) => ({
@@ -14,5 +15,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
     priority: 0.6,
   }));
-  return [{ url: site.url, changeFrequency: "daily", priority: 1 }, ...cats, ...recipes];
+  const tips = getAllTips().map((t) => ({
+    url: `${site.url}/tips/${t.slug}`,
+    lastModified: t.date,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+  return [
+    { url: site.url, changeFrequency: "daily", priority: 1 },
+    { url: `${site.url}/tips`, changeFrequency: "weekly" as const, priority: 0.6 },
+    ...cats,
+    ...recipes,
+    ...tips,
+  ];
 }

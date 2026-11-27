@@ -115,3 +115,13 @@ nav { display: flex; align-items: center; flex-wrap: wrap; }
 .follow { margin-top: 14px; }
 .footer .follow-pin { display: inline-block; background: #E60023; color: #fff; font-weight: 700; padding: 9px 18px; border-radius: 99px; text-decoration: none; }
 .footer .follow-pin:hover { background: #ad081b; }
+.prose h2 { margin-top: 1.6em; }
+.prose table { border-collapse: collapse; width: 100%; font: .95rem system-ui, sans-serif; margin: 1em 0; }
+.prose th, .prose td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; }
+.prose th { background: #fdf0e6; }
+/* breadcrumbs are a <nav> too: keep them out of the header nav styles */
+nav.crumbs { display: block !important; width: auto; overflow: visible; white-space: normal; }
+nav.crumbs a { margin: 0; white-space: normal; }
+.grid-4 { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+.grid-4 .card h3 { font-size: 1.05rem; }
+.tip-chips { justify-content: flex-start; margin: 8px 0 4px; }
