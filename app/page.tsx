@@ -104,7 +104,7 @@ export default function Home() {
           return (
             <section key={c.slug} className="cat-row">
               <div className="row-head">
-                <h2 className="section-title">{c.name} Recipes</h2>
+                <h2 className="section-title">{c.slug === "desserts" ? "Dessert" : c.name} Recipes</h2>
                 <Link href={`/category/${c.slug}`} className="see-all">See all →</Link>
               </div>
               <div className="grid">{items.map((r) => <RecipeCard key={r.slug} r={r} />)}</div>

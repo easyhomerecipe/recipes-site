@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const c = site.categories.find((x) => x.slug === category);
   if (!c) return {};
   return {
-    title: `${c.name} Recipes`,
+    title: `${c.slug === "desserts" ? "Dessert" : c.name} Recipes`,
     description: `Easy ${c.name.toLowerCase()} recipes with step-by-step instructions.`,
     alternates: { canonical: `/category/${c.slug}` },
   };
@@ -29,7 +29,7 @@ export default async function CategoryPage({ params }: Props) {
   const recipes = getByCategory(slug);
   return (
     <>
-      <h1>{c.name} Recipes</h1>
+      <h1>{c.slug === "desserts" ? "Dessert" : c.name} Recipes</h1>
       <p className="lead">Easy {c.name.toLowerCase()} recipes with step-by-step instructions.</p>
       <AdSlot />
       {recipes.length ? (
