@@ -111,3 +111,7 @@ nav { display: flex; align-items: center; flex-wrap: wrap; }
   .stats { gap: 6px 16px; }
 }
 .top > *, .grid > * { min-width: 0; }
+
+.follow { margin-top: 14px; }
+.footer .follow-pin { display: inline-block; background: #E60023; color: #fff; font-weight: 700; padding: 9px 18px; border-radius: 99px; text-decoration: none; }
+.footer .follow-pin:hover { background: #ad081b; }

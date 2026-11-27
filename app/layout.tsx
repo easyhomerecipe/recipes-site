@@ -56,6 +56,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <p>
               <Link href="/about">About</Link> · <Link href="/privacy">Privacy Policy</Link> · <Link href="/terms-of-service">Terms</Link> · <Link href="/disclaimer">Disclaimer</Link> · <Link href="/contact">Contact</Link>
             </p>
+            <p className="follow">
+              <a href="https://www.pinterest.com/easyhomerecipe_/" target="_blank" rel="me noopener noreferrer" className="follow-pin">
+                📌 Follow us on Pinterest
+              </a>
+            </p>
           </div>
         </footer>
       </body>
