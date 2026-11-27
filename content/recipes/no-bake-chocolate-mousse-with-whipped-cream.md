@@ -8,7 +8,7 @@ category: "desserts"
 cuisine: "American"
 tags: ["mousse", "chocolate", "no-bake", "dessert", "easy"]
 prepTime: 15
-cookTime: 0
+cookTime: 5
 servings: 4
 calories: 350
 ingredients:
@@ -25,7 +25,7 @@ ingredients:
 steps:
   - "In a medium bowl, melt the chopped chocolate over a double boiler or in the microwave, stirring until smooth."
   - "In another bowl, whisk together the egg yolks, granulated sugar, vanilla extract, and salt until combined."
-  - "Slowly whisk in the warm milk until the mixture is smooth."
+  - "Heat the milk until steaming, then slowly whisk it into the egg yolk mixture. Pour everything back into the saucepan and cook over low heat, stirring constantly, until it thickens slightly and reaches 160°F (71°C) on a thermometer, about 3-5 minutes."
   - "Gradually add the melted chocolate to the egg mixture, stirring until fully combined."
   - "In a separate bowl, whip 1 cup of heavy cream until stiff peaks form."
   - "Gently fold the whipped cream into the chocolate mixture until no white streaks remain."
@@ -33,6 +33,7 @@ steps:
   - "Before serving, whip the additional heavy cream with powdered sugar until stiff peaks form."
   - "Top each mousse with a dollop of whipped cream and garnish with chocolate shavings if desired."
 tips:
+  - "Cooking the egg yolks to 160°F (71°C) makes them safe to eat. You can also use pasteurized eggs."
   - "Make sure to use quality chocolate for the best flavor."
   - "Be gentle when folding in the whipped cream to keep the mousse light and airy."
   - "Refrigerating for longer than 2 hours will enhance the flavors and texture."
