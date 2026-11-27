@@ -4,7 +4,7 @@ export const site = {
   name: "Easy Home Recipes",
   tagline: "Easy home recipes for every day",
   description:
-    "Easy home recipes with step-by-step instructions, ingredient lists, cooking times and nutrition info.",
+    "Quick, family-friendly dishes with clear step-by-step instructions, ingredient lists, cooking times and nutrition info.",
   // Set NEXT_PUBLIC_SITE_URL in Vercel (e.g. https://easyhomerecipe.com)
   url: (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, ""),
   author: "Kabir",
